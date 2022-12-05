@@ -1,9 +1,14 @@
+import * as react from 'react';
 
-<div>
-    <form action="#">
+export default function SearchBar(){
+    return(
+        <div>
+            <form action="#">
                 <input type="text"
                     placeholder=" Search Courses"
                     name="search" />
                 <button>Search</button>
-    </form>
-</div>
+            </form>
+        </div>
+    )
+}
