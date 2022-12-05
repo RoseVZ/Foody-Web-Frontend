@@ -33,11 +33,7 @@ export default function App() {
        </Grid>
       </box>
       <box>
-        <Grid container columnSpacing={0} rowSpacing={0} backgroundColor='black' color='white'>
-        <Grid item xs={4}>Company</Grid>
-        <Grid item xs={4}>Contact Us</Grid>
-        <Grid item xs={4}>Legal</Grid>
-        </Grid>
+        {/* <Footer \> */}
       </box>
     </div>
   );
