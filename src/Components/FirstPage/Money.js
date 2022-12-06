@@ -1,4 +1,4 @@
-import * as react from react;
+import React from "react";
 import { Grid } from "@mui/material";
 
 export default function Money(){
