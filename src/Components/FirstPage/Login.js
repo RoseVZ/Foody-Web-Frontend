@@ -43,7 +43,7 @@ export default function Login() {
 
   return (
     <div>
-      {['Sign In'].map((anchor) => (
+      {['Login'].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
           <Drawer
