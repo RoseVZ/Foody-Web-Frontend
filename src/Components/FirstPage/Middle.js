@@ -1,12 +1,12 @@
 import React from "react";
 import { Grid } from "@mui/material";
 
-export default function Money(){
+export default function Middle(){
     return(
         <Grid container columnSpacing={0} rowSpacing={0} backgroundColor="#2b1e16" color='white'>
             <Grid item xs={4}>
                 <p>
-                    <Grid container spacing = {2}>
+                    <Grid container pl={1}>
                     <Grid container justifyContent='center' pt={2}>
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.iSu2RcCcdm78xbxNDJMJSgHaEo%26pid%3DApi&f=1&ipt=70ec24eac66bb835a26ac9ff0f1667afc597a926eefdeb70cc3533e35bccd188&ipo=images" alt="random-img" height={100} width={100}/>
                     </Grid>
@@ -18,7 +18,7 @@ export default function Money(){
             </Grid> 
             <Grid item xs={4}>
                 <p>
-                    <Grid container spacing = {2}>
+                    <Grid container pl={1}>
                     <Grid container justifyContent='center' pt={2}>
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.iSu2RcCcdm78xbxNDJMJSgHaEo%26pid%3DApi&f=1&ipt=70ec24eac66bb835a26ac9ff0f1667afc597a926eefdeb70cc3533e35bccd188&ipo=images" alt="random-img" height={100} width={100}/>
                     </Grid>
@@ -30,7 +30,7 @@ export default function Money(){
             </Grid> 
             <Grid item xs={4}>
                 <p>
-                    <Grid container spacing = {2}>
+                    <Grid container pl={1}>
                     <Grid container justifyContent='center' pt={2}>
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.iSu2RcCcdm78xbxNDJMJSgHaEo%26pid%3DApi&f=1&ipt=70ec24eac66bb835a26ac9ff0f1667afc597a926eefdeb70cc3533e35bccd188&ipo=images" alt="random-img" height={100} width={100}/>
                     </Grid>
@@ -39,7 +39,7 @@ export default function Money(){
                     </p>
                     </Grid>
                 </p>
-            </Grid>    
+            </Grid> 
         </Grid>
     )
 }

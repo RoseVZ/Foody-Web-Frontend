@@ -1,8 +1,8 @@
 import * as React from 'react';
-import FirstPage from './Components/Pages/FirstPage';
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
 // import Checkout from './Components/Pages/CheckOut';
-
+import FirstPage from './Components/Pages/FirstPage';
+// import CustomerPage from './Components/Pages/CustomerPage';
 
 export default function App() {
   return (

@@ -1,5 +1,5 @@
 import LogoSign from '../FirstPage/logoSign';
-import Money from '../FirstPage/Middle';
+import Middle from '../FirstPage/Middle';
 import Footer from '../FirstPage/Footer';
 import React from 'react';
 
@@ -10,7 +10,7 @@ export default function FirstPage(){
           <LogoSign/>
         </box>
         <box>
-          <Money/>
+          <Middle/>
         </box>
         <box>
           <Footer /> 
