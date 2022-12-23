@@ -1,7 +1,7 @@
 import * as React from 'react';
 import FirstPage from './Components/Pages/FirstPage';
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
-import SignUp from './Components/FirstPage/SignUp';
+// import Checkout from './Components/Pages/CheckOut';
 
 
 export default function App() {
@@ -10,7 +10,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<FirstPage />}>
         <Route index element={<FirstPage />} />
-        <Route path="/signup" element={<SignUp />} />
+        {/* <Route path="/signup" element={<SignUp />} /> */}
         {/* <Route path="contact" element={<Contact />} /> */}
         {/* <Route path="*" element={<NoPage />} /> */}
       </Route>
