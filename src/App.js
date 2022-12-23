@@ -1,22 +1,21 @@
 import * as React from 'react';
-// import Grid from '@mui/material/Grid';
-import LogoSign from './Components/FirstPage/logoSign';
-import Money from './Components/FirstPage/Money';
-import Footer from './Components/FirstPage/Footer';
+import FirstPage from './Components/Pages/FirstPage';
+import {BrowserRouter,Route,Routes} from 'react-router-dom';
+import SignUp from './Components/FirstPage/SignUp';
+
 
 export default function App() {
   return (
-    <div>
-      <box>
-        <LogoSign/>
-      </box>
-      <box>
-        <Money/>
-      </box>
-      <box>
-        <Footer /> 
-      </box>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<FirstPage />}>
+        <Route index element={<FirstPage />} />
+        <Route path="/signup" element={<SignUp />} />
+        {/* <Route path="contact" element={<Contact />} /> */}
+        {/* <Route path="*" element={<NoPage />} /> */}
+      </Route>
+    </Routes>
+  </BrowserRouter>
   );
 }
 
