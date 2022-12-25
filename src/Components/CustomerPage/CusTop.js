@@ -7,14 +7,14 @@ export default function CusTop(){
         <Box>
             <Grid container>
                 <Grid item xs={10}>
-                <img src= "https://scalebranding.com/wp-content/uploads/2020/03/fun-food-logo.jpg" width='60px' height='60px' alt='logo'></img> 
+                    <img src= "https://scalebranding.com/wp-content/uploads/2020/03/fun-food-logo.jpg" width='60px' height='60px' alt='logo'></img> 
                 </Grid>
-                <Grid item xs={1} pt={1.5   } pl={10}>
+                <Grid item xs={1} pt={1.5} pl={10}>
                     <Link><ShoppingCartIcon/></Link>   
                 </Grid>
                 <Grid item xs={1} pt={0.5}>
                     <Link>
-                        <Avatar>PA</Avatar>
+                        <Avatar>PP</Avatar>
                     </Link>
                 </Grid>
             </Grid>

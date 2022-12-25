@@ -5,7 +5,7 @@ export default function Footer(){
     return(
         <Grid container columnSpacing={0} rowSpacing={0} backgroundColor='black' color='white'>
             <Grid item xs={4} pl={1}>
-                <p>Company</p>
+                <p><strong>Company</strong></p>
                 <p>Company</p>
                 <p>Company</p>
                 <p>Company</p>

@@ -44,7 +44,7 @@ export default function LogoSign(){
               <Grid item xs={1}></Grid>
               <Grid>
                <p> We are available at : </p>
-               <p> Bengaluru , Mysuru , Hubli , Davangere , Dharwad</p> 
+               <p> <em>Bengaluru , Mysuru , Hubli , Davangere , Dharwad</em></p> 
                </Grid>
             </Grid>
           </Box>
