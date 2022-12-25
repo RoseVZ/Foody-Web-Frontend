@@ -11,7 +11,7 @@ export default function ActionAreaCard() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="200"
+          height="150"
           image="https://www.sagephotographystudio.com/img/s/v-10/p1875786421-4.jpg"
           alt="kokre"
         />
