@@ -1,7 +1,14 @@
 import React from "react";
+import { Grid } from "@mui/material";
 
-export default function top(){
+export default function Top(){
     return(
-        <div>Top</div>
+        <div>
+            <Grid container>
+                <Grid item>
+                    
+                </Grid>
+            </Grid>
+        </div>
     )
 }

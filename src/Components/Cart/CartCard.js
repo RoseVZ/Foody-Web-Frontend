@@ -3,7 +3,7 @@ import { Grid,Card,CardContent,Typography,Button } from "@mui/material";
 
 export default function CartCard(){
     return(
-        <Grid pt={1} pl={1} pr={1}>
+        <Grid pt={1} pl={1} pr={1} component="main">
                 <Card>
                         <CardContent>
                             <Grid container>
