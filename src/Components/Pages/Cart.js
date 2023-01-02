@@ -8,6 +8,7 @@ export default function Cart(){
         <CartTop/>
         <CartCard/>
         <CartCard/>
+        <CartCard/>
         </div>
     )
 }

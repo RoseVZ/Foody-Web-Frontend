@@ -1,34 +1,25 @@
 import React from "react";
 import { Grid,Card,CardContent,Typography,Button } from "@mui/material";
 
-let n = 0;
-
-function add(){
-    n++;
-}
-
-function sub(){
-    n--;
-}
-
-
 export default function CartCard(){
     return(
-        <Grid pt={1}>
-                <Card backgroundColor="yellow">
+        <Grid pt={1} pl={1} pr={1}>
+                <Card>
                         <CardContent>
                             <Grid container>
                                 <Grid item xs={1}>
-                                    <img src="http://chinabuffetatlantic.com/custom/3.jpg" alt="food" width="70px" height="70px"></img>
+                                    <img src="http://chinabuffetatlantic.com/custom/3.jpg" alt="food" width="65px" height="65px"></img>
                                 </Grid>
-                                <Grid item xs={10}>                      
-                                    <Typography variant="h5">Food Name</Typography>
-                                    <Typography variant="body2">Description / Restuarant Name</Typography>
+                                <Grid item xs={9}>                      
+                                    <Typography variant="h6">Food Name</Typography>
+                                    <Typography variant="body3">Description / Restuarant Name</Typography>
+                                </Grid>
+                                <Grid item xs={1} pt={3} pl={13}>
+                                    1   
                                 </Grid>
                                 <Grid item xs={1}>
-                                    <Button onClick={add()}>+</Button>
-                                    <p>{n}</p>
-                                    <Button onClick={sub()}>-</Button>
+                                    <Button onClick=''>+</Button>
+                                    <Button onClick=''>-</Button>
                                 </Grid>
                             </Grid>
                         </CardContent>
