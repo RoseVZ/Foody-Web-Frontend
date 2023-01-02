@@ -8,12 +8,7 @@ export default function CustomerPage(){
             <CusTop/>
             <Grid container pl={2} spacing={1}>
                 <Grid item><FoodCards/></Grid>
-                <Grid item><FoodCards/></Grid>
-                <Grid item><FoodCards/></Grid>
-                <Grid item><FoodCards/></Grid>
-                <Grid item><FoodCards/></Grid>
-                <Grid item><FoodCards/></Grid>
-                <Grid item><FoodCards/></Grid>
+                
             </Grid> 
         </div>
     )
