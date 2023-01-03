@@ -1,7 +1,10 @@
 import React from "react";
+import Top from "../DeliveryAgent/top";
 
 export default function Menu(){
     return(
-        <div>Menu</div>
+        <div>
+            <Top/>
+        </div>
     )
 }

@@ -14,7 +14,7 @@ export default function CusTop(){
                 </Grid>
                 <Grid item xs={1} pt={0.5}>
                     <Link>
-                        <Avatar>PP</Avatar>
+                        <Avatar>P</Avatar>
                     </Link>
                 </Grid>
             </Grid>

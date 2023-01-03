@@ -6,12 +6,27 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Avatar from '@mui/material/Avatar';
-import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import { MenuItem } from '@mui/material';
 
 const theme = createTheme();
+
+const options = [
+  {
+    value: '1',
+    label: 'Restuarant',
+  },
+  {
+    value: '0',
+    label: 'Customer',
+  },
+  {
+    value: '3',
+    label: 'Delivery Agent',
+  },
+];
 
 
 export default function SignUp() {
@@ -87,6 +102,7 @@ function SignIn() {
             Sign Up
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+
             <TextField
               margin="normal"
               required
@@ -95,8 +111,8 @@ function SignIn() {
               label="Email Address"
               name="email"
               autoComplete="email"
-              autoFocus
-            />
+              autoFocus/>
+
             <TextField
               margin="normal"
               required
@@ -105,8 +121,8 @@ function SignIn() {
               label=" Create Password"
               type="password"
               id="password"
-              autoComplete="current-password"
-            />
+              autoComplete="current-password"/>
+
             <TextField 
               margin = "normal"
               required 
@@ -114,6 +130,37 @@ function SignIn() {
               name = "Confirm Password"
               label = "Confirm password"
               id = "confirmPassword"/>
+
+            <TextField 
+              margin = "normal"
+              required 
+              fullWidth
+              name = "Name"
+              label = "Name"
+              id = "name"/>
+
+            <TextField 
+              margin = "normal"
+              required 
+              fullWidth
+              name = "Phone Number"
+              label = "Phone Number"
+              id = "phoneNumber"/>
+
+            <p></p>
+              
+            <TextField
+              id="select-role"
+              select
+              label="Who are you?"
+              defaultValue="0">
+              {options.map((option) => (
+                <MenuItem key={option.value} value={option.value}>
+                  {option.label}
+                </MenuItem>
+              ))}
+            </TextField>
+
             <Button
               type="submit"
               fullWidth
@@ -122,10 +169,6 @@ function SignIn() {
             >
               Sign Up
             </Button>
-            <Grid container>
-              <Grid item xs>
-              </Grid>
-            </Grid>
           </Box>
         </Box>
       </Container>
