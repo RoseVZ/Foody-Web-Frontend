@@ -25,7 +25,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function Restuarant() {
+export default function Customer() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -66,7 +66,6 @@ export default function Restuarant() {
                   autoFocus
                 />
               </Grid>
-              
               <Grid item xs={12} sm={6}>
                 <TextField
                   required
@@ -77,7 +76,6 @@ export default function Restuarant() {
                   autoComplete="family-name"
                 />
               </Grid>
-
               <Grid item xs={12}>
                 <TextField
                   required
@@ -88,7 +86,6 @@ export default function Restuarant() {
                   autoComplete="email"
                 />
               </Grid>
-
               <Grid item xs={12}>
                 <TextField
                   fullWidth
@@ -98,16 +95,6 @@ export default function Restuarant() {
                   id="gst"
                 />
               </Grid>
-
-              <Grid item xs={12}>
-              <TextField 
-              required 
-              fullWidth
-              name = "Phone Number"
-              label = "Phone Number"
-              id = "phoneNumber"/>
-              </Grid>
-
               <Grid item xs={12}>
                 <TextField
                   fullWidth
@@ -117,7 +104,6 @@ export default function Restuarant() {
                   id="address"
                 />
               </Grid>
-
             </Grid>
             <Button
               type="submit"
