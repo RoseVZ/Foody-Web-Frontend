@@ -90,13 +90,15 @@ export default function Delivery() {
                 <TextField
                   fullWidth
                   required
-                  name="gst"
-                  label="GST Number"
-                  id="gst"
+                  name="dl"
+                  label="Driving License"
+                  id="dl"
                 />
               </Grid>
               <Grid item xs={12}>
                 <TextField
+                  multiline="true"
+                  rows="3"
                   fullWidth
                   required
                   name="address"
@@ -104,6 +106,29 @@ export default function Delivery() {
                   id="address"
                 />
               </Grid>
+
+              
+              <Grid item xs={12}>
+                <TextField
+                  required
+                  fullWidth
+                  id="phone"
+                  label="Phone Number"
+                  name="phone"
+                />
+              </Grid>
+
+              
+              <Grid item xs={12}>
+                <TextField
+                  required
+                  fullWidth
+                  id="vechicle-no"
+                  label="Vehicle Number"
+                  name="vechicle-no"
+                />
+              </Grid>
+
             </Grid>
             <Button
               type="submit"

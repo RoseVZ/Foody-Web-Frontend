@@ -88,15 +88,17 @@ export default function Customer() {
               </Grid>
               <Grid item xs={12}>
                 <TextField
-                  fullWidth
                   required
-                  name="gst"
-                  label="GST Number"
-                  id="gst"
+                  fullWidth
+                  id="phone"
+                  label="Phone Number"
+                  name="phone"
                 />
               </Grid>
               <Grid item xs={12}>
                 <TextField
+                  multiline="true"
+                  rows="3"
                   fullWidth
                   required
                   name="address"
