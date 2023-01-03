@@ -9,7 +9,7 @@ import Avatar from '@mui/material/Avatar';
 import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import { MenuItem } from '@mui/material';
+import { MenuItem,Grid } from '@mui/material';
 
 const theme = createTheme();
 
@@ -131,13 +131,29 @@ function SignIn() {
               label = "Confirm password"
               id = "confirmPassword"/>
 
-            <TextField 
-              margin = "normal"
-              required 
-              fullWidth
-              name = "Name"
-              label = "Name"
-              id = "name"/>
+            <Grid container spacing={2}>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  autoComplete="given-name"
+                  name="firstName"
+                  required
+                  fullWidth
+                  id="firstName"
+                  label="First Name"
+                  autoFocus
+                />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  fullWidth
+                  id="lastName"
+                  label="Last Name"
+                  name="lastName"
+                  autoComplete="family-name"
+                />
+              </Grid>
+            </Grid>
 
             <TextField 
               margin = "normal"
