@@ -5,7 +5,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { CardActionArea,Grid } from '@mui/material';
 
 export default function ActionAreaCard() {
   const [data,setData] = useState([])
@@ -19,7 +19,7 @@ export default function ActionAreaCard() {
       fetchData()
   },[])
   return (
-    <div>
+    <Grid>
       {data.map((x) => {
         return (
           <Card sx={{ maxWidth: 345 }} key={x?.GST_no}>
@@ -43,6 +43,6 @@ export default function ActionAreaCard() {
           </Card>
         )
       })}
-      </div>
+      </Grid>
   );
 }
