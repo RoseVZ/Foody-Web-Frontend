@@ -9,7 +9,6 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { useState } from 'react';
 
 function Copyright(props) {
   return (
@@ -24,10 +23,9 @@ function Copyright(props) {
   );
 }
 
-
 const theme = createTheme();
 
-export default function Restuarant() {
+export default function Customer() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -36,13 +34,6 @@ export default function Restuarant() {
       password: data.get('password'),
     });
   };
-
-  const [file, setFile] = useState();
-  function handleChange(e) {
-  console.log(e.target.files);
-  setFile(URL.createObjectURL(e.target.files[0]));
-  }
-
 
   return (
     <ThemeProvider theme={theme}>
@@ -75,7 +66,6 @@ export default function Restuarant() {
                   autoFocus
                 />
               </Grid>
-              
               <Grid item xs={12} sm={6}>
                 <TextField
                   required
@@ -86,7 +76,6 @@ export default function Restuarant() {
                   autoComplete="family-name"
                 />
               </Grid>
-
               <Grid item xs={12}>
                 <TextField
                   required
@@ -97,26 +86,15 @@ export default function Restuarant() {
                   autoComplete="email"
                 />
               </Grid>
-
               <Grid item xs={12}>
                 <TextField
-                  fullWidth
                   required
-                  name="gst"
-                  label="GST Number"
-                  id="gst"
+                  fullWidth
+                  id="phone"
+                  label="Phone Number"
+                  name="phone"
                 />
               </Grid>
-
-              <Grid item xs={12}>
-              <TextField 
-              required 
-              fullWidth
-              name = "Phone Number"
-              label = "Phone Number"
-              id = "phoneNumber"/>
-              </Grid>
-
               <Grid item xs={12}>
                 <TextField
                   multiline="true"
@@ -128,50 +106,6 @@ export default function Restuarant() {
                   id="address"
                 />
               </Grid>
-
-              
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="mgrname"
-                  label="Manager Name"
-                  name="mgrname"
-                />
-              </Grid>
-
-              
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="mgrphno"
-                  label="Manager Phone Number"
-                  name="mgrphno"
-                />
-              </Grid>
-
-              
-              <Grid item xs={12}>
-                <TextField
-                  multiline="true"
-                  rows="5"
-                  fullWidth
-                  id="desc"
-                  label="Description"
-                  name="desc"
-                />
-              </Grid>
-
-              <Grid item xs={12}>
-              <Typography 
-              variant="body1">
-                Restuarant Image Upload
-              </Typography>
-                <input type="file" onChange={handleChange} />
-              <img src={file} alt=""/>
-              </Grid>
-
             </Grid>
             <Button
               type="submit"
