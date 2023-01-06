@@ -13,6 +13,9 @@ import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import { useState } from 'react';
+import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 const theme = createTheme();
 
@@ -37,8 +40,8 @@ export default function Login() {
     <Box
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 400 }}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
+      onClick={toggleDrawer(anchor, true)}
+      onKeyDown={toggleDrawer(anchor, true)}
     >
       <SignIn/>
     </Box>
@@ -63,9 +66,22 @@ export default function Login() {
 }
 
 function SignIn() {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: ''
+  });
+
+  //destructuring the data
+  const { email, password } = formData;
+
+  //handles the change in 
+  const onChange=e=>setFormData({...formData, [e.target.name]:e.target.value})
+ 
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    //login function goes here
+    let email= data.get('email')
     console.log({
       email: data.get('email'),
       password: data.get('password'),
@@ -100,6 +116,9 @@ function SignIn() {
               name="email"
               autoComplete="email"
               autoFocus
+              value={email}
+              onChange={e=>onChange(e)}
+
             />
             <TextField
               margin="normal"
@@ -109,7 +128,10 @@ function SignIn() {
               label="Password"
               type="password"
               id="password"
+              minlength='6'
               autoComplete="current-password"
+              value={password}
+              onChange={e=>onChange(e)}
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
@@ -125,7 +147,7 @@ function SignIn() {
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
+                <Link href="http://localhost:3000/reset-password" variant="body2">
                   Forgot password?
                 </Link>
               </Grid>

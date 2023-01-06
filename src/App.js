@@ -11,6 +11,9 @@ import InvalidPage from './Components/Pages/InvalidPage';
 import RestuarantProfile from './Components/Pages/RestuarantProfile';
 import DeliveryProfile from './Components/Pages/DeliveryProfile';
 import CustomerProfile from './Components/Pages/CustomerProfile';
+import Activate from './containers/Activate';
+import ResetPasswordConfirm from './containers/ResetPasswordConfirm';
+import ResetPass from './containers/ResetPass';
 
 export default function App() {
   return (
@@ -26,6 +29,9 @@ export default function App() {
         <Route path="/rprofile" element={<RestuarantProfile/>} />
         <Route path="/cprofile" element={<CustomerProfile />} />
         <Route path="/dprofile" element={<DeliveryProfile />} />
+        <Route path="/reset-password" element={<ResetPass />} />
+        <Route path="/password/reset/confirm/:uid/:token" element={<ResetPasswordConfirm />} />
+        <Route path="/activate/:uid/:token" element={<Activate />} />
         <Route path="*" element={<InvalidPage />} />
     </Routes>
   </BrowserRouter>
