@@ -128,7 +128,7 @@ function SignIn() {
               label="Password"
               type="password"
               id="password"
-              minlength='6'
+              minLength='6'
               autoComplete="current-password"
               value={password}
               onChange={e=>onChange(e)}
