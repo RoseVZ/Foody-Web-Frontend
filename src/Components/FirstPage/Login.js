@@ -16,11 +16,11 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-
+import { login } from '../../actions/auth';
 const theme = createTheme();
 
 
-export default function Login() {
+const Login=({login}) =>{
   const [state, setState] = React.useState({
     right: false,
     left : true,
@@ -80,7 +80,7 @@ function SignIn() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    //login function goes here
+    login(email,password)
     let email= data.get('email')
     console.log({
       email: data.get('email'),
@@ -159,3 +159,4 @@ function SignIn() {
   );
 }
 
+export default  connect(null,{login}) (Login)
