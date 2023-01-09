@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid,Button,Box } from "@mui/material";
+import { Grid,Button,Box,Link } from "@mui/material";
 
 export default function CartEnd(){
     return(
@@ -10,7 +10,9 @@ export default function CartEnd(){
                 </Grid>
                 <Grid item xs={9}></Grid>
                 <Grid>
-                    <Button variant="contained" color="success">Checkout</Button>
+                    <Link href="/checkout">
+                        <Button variant="contained" color="success">Checkout</Button>
+                    </Link>
                 </Grid>
             </Grid>
         </Box>
