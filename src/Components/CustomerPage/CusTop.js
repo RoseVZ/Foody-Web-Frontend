@@ -1,6 +1,7 @@
 import React from "react";
 import { Avatar, Box,Grid,Link } from "@mui/material";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import stringAvatar from "../UserField/stringAvatar";
 
 export default function CusTop(){
     return(
@@ -13,8 +14,8 @@ export default function CusTop(){
                     <Link><ShoppingCartIcon/></Link>   
                 </Grid>
                 <Grid item xs={1} pt={0.5}>
-                    <Link>
-                        <Avatar>P</Avatar>
+                    <Link href="/cprofile" underline="none">
+                        <Avatar {...stringAvatar("Priyanka")}/>
                     </Link>
                 </Grid>
             </Grid>

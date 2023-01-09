@@ -13,8 +13,8 @@ export default function Top(){
                 {/* <Typography variant="body2">Food Website</Typography> */}
             </Grid>
                 <Grid item pt={1}>
-                    <Link href="/cprofile" underline="none">
-                        <Avatar {...stringAvatar('Priyanka')} />
+                    <Link href="/rprofile" underline="none">
+                    <Avatar {...stringAvatar("Priyanka")} />
                     </Link>
                 </Grid>
             </Grid>

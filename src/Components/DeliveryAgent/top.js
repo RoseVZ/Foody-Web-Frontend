@@ -1,5 +1,6 @@
 import React from "react";
-import { Grid,Avatar } from "@mui/material";
+import { Grid,Avatar,Link } from "@mui/material";
+import stringAvatar from "../UserField/stringAvatar";
 
 export default function Top(){
     return(
@@ -12,7 +13,9 @@ export default function Top(){
                 {/* <Typography variant="body2">Food Website</Typography> */}
             </Grid>
                 <Grid item pt={1}>
-                    <Avatar>D</Avatar>
+                    <Link href="/dprofile" underline="none">
+                    <Avatar {...stringAvatar("Priyanka")} />
+                    </Link>
                 </Grid>
             </Grid>
         </div>

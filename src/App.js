@@ -13,7 +13,7 @@ import DeliveryProfile from './Components/Pages/DeliveryProfile';
 import CustomerProfile from './Components/Pages/CustomerProfile';
 import Activate from './containers/Activate';
 import ResetPasswordConfirm from './containers/ResetPasswordConfirm';
-import ResetPass from './containers/ResetPass';
+import ResetPass from './containers/Resetpass';
 import { Provider } from 'react-redux';
 import store from './store';
 
@@ -29,6 +29,7 @@ export default function App() {
           <Route path="/delivery" element={<DeliveryAgent />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/restuarant" element={<RestaurantPage />} />
+          <Route path="/editmenu" element={<RestaurantPage />} />
           <Route path="/rprofile" element={<RestuarantProfile/>} />
           <Route path="/cprofile" element={<CustomerProfile />} />
           <Route path="/dprofile" element={<DeliveryProfile />} />
