@@ -55,6 +55,9 @@ export default function SignUp() {
     </Box>
   );
 
+  //update the values from login
+  
+
   return (
     <div>
       {['SignUp'].map((anchor) => (
@@ -81,6 +84,7 @@ function SignIn() {
       email: data.get('email'),
       password: data.get('password'),
     });
+
   };
 
   return (
